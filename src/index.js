@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './fonts/Cabin/static/Cabin/Cabin-Regular.ttf';
+import './fonts/Cabin/static/Cabin/Cabin-Bold.ttf';
 
 
 ReactDOM.render(

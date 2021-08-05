@@ -23,9 +23,10 @@ export default function Modal() {
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
-          <div className="modal-content">
+          <div className="modal-popup">
           <img src={require('../../Images/house1.jpg').default} className="image"  />
-            <h2>A new Home</h2>
+          <div className="modal-content">
+            <h1 className="modal-heading">A new Home</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               perferendis suscipit officia recusandae, eveniet quaerat assumenda
@@ -34,6 +35,7 @@ export default function Modal() {
               quaerat ipsum quos molestiae rem aspernatur dicta tenetur. Sunt
               placeat tempora vitae enim incidunt porro fuga ea.
             </p>
+            </div>
             <button className="close-modal" onClick={toggleModal}>
               CLOSE
             </button>

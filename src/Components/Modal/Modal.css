@@ -9,10 +9,6 @@ body.active-modal {
   font-size: 18px;
 }
 
-.image {
-  width: 100%;
-}
-
 .modal,
 .overlay {
   width: 100vw;
@@ -27,17 +23,35 @@ body.active-modal {
 .overlay {
   background: rgba(49, 49, 49, 0.8);
 }
-.modal-content {
+.modal-popup {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: #f1f1f1;
-  padding: 14px 28px;
+  padding: 0;
   border-radius: 10px;
   max-width: 600px;
   min-width: 300px;
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.modal-content {
+  text-align: center;
+  padding: 0 28px 14px 28px;
+  font-family: "Cabin-Regular";
+  color: #555;
+}
+.modal-heading {
+  font-weight: 700;
+  font-size: 50px;
+  font-family: "Cabin-Bold";
+  text-transform: uppercase;
 }
 
 .close-modal {
